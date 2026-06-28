@@ -1,15 +1,18 @@
 
 
-<div class="row p-3">
-  <div class="col-12">
-    <!-- Busqueda -->
-    <gifs-search-box></gifs-search-box>
+<div class="container-fluid p-3"> <div class="row">
+    <div class="col-12">
+      <gifs-search-box></gifs-search-box>
+    </div>
   </div>
 
-  <div class="grid-container">
-  <div *ngFor="let gif of gifs" class="gif-card">
-    <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img">
-    <p class="card-title">{{ gif.title }}</p>
+  <div class="row mt-3"> <div class="col-12">
+      <div class="grid-container">
+        <div *ngFor="let gif of gifs" class="gif-card">
+          <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img">
+          <p class="card-title">{{ gif.title }}</p>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 </div>

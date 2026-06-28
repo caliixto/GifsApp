@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-/* Para pantallas pequeñas, como móviles */
 * {
   box-sizing: border-box;
   max-width: 100%;
@@ -7,9 +6,9 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 1.5rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .gif-card {
@@ -36,6 +35,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 
 @media (max-width: 576px) {
   body {
